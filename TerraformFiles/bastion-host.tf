@@ -28,7 +28,7 @@ resource "aws_security_group" "workshop-bastion-sg" {
 #Create bastion host in EU-West-1A Public subnet
 
 resource "aws_instance" "workshop_bastion_host-1a" {
-    ami = "ami-08ca3fed11864d6bb"
+    ami = "ami-0851b76e8b1bce90b"
     instance_type = "t2.micro"
     key_name = aws_key_pair.ssh-key.key_name 
     associate_public_ip_address = true 
@@ -43,7 +43,7 @@ resource "aws_instance" "workshop_bastion_host-1a" {
 #Create bastion host in EU-West-1B Public subnet
 
 resource "aws_instance" "workshop_bastion_host-1b" {
-    ami = "ami-08ca3fed11864d6bb"
+    ami = "ami-0851b76e8b1bce90b"
     instance_type = "t2.micro"
     key_name = aws_key_pair.ssh-key.key_name 
     associate_public_ip_address = true 
